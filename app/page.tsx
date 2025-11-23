@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import { Nav } from "./components/Nav/Nav";
 import { AboutSection } from "./components/Sections/AboutSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <ProjectSection />
       <AboutSection />
       <BlogSection />
+      <Footer />
     </div>
   );
 }
