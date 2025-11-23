@@ -1,5 +1,6 @@
 import ExternalLink from "@/app/assets/external_link_icon.svg";
 import Image from "next/image";
+import ArrowIcon from "@/app/assets/double_arrow_icon.svg";
 
 export function BlogSection() {
   const blogPosts = [
@@ -40,12 +41,23 @@ export function BlogSection() {
               className="group p-5 rounded-xl border border-gray-200 
                 bg-white shadow-sm hover:shadow-md cursor-pointer"
             >
-              <h3 className="text-xl font-semibold mb-2 text-gray-800 hover:underline break-keep">
-                {post.title}
-              </h3>
-              <p className="text-sm text-gray-500 blur-sm group-hover:blur-none">
-                {post.preview}
-              </p>
+              <div className="flex flex-col h-[230px] justify-center gap-3">
+                <h3 className="text-xl font-semibold mb-2 text-gray-800 hover:underline break-keep">
+                  {post.title}
+                </h3>
+                <p className="text-sm text-gray-500 blur-sm group-hover:blur-none">
+                  {post.preview}
+                </p>
+              </div>
+                <span className="flex justify-end text-gray-500">
+                  자세히 보기
+                  <Image
+                    src={ArrowIcon}
+                    alt="자세히 보기"
+                    width={18}
+                    height={18}
+                  />
+                </span>
             </a>
           ))}
         </div>
