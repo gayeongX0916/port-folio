@@ -12,13 +12,14 @@ export function AboutSection() {
             alt="프로필"
             width={120}
             height={150}
-            className="rounded-full"
+            className="rounded-full flex-2"
           />
-          <p className="text-gray-700 leading-relaxed text-lg break-keep">
-            React와 Next.js를 중심으로 사용자 경험을 개선하는 데 관심이 많은
-            프론트엔드 개발자입니다. 배운 내용을 기술 블로그에 기록하며 꾸준히
-            성장하고 있으며, 협업과 소통을 통해 더 나은 서비스를 만드는 과정에
-            가치를 둡니다.
+          <p className="text-gray-700 leading-relaxed text-xl break-keep flex-8">
+            React와 Next.js 기반으로 사용자 경험을 개선하는 데 관심이 많은
+            프론트엔드 개발자입니다. 새로운 기술을 배우고 실제 문제 해결에
+            적용하는 과정에서 큰 동기부여를 느끼며, 배운 내용을 기술 블로그에
+            기록하며 꾸준히 성장하고 있습니다. 협업과 소통을 통해 더 나은
+            서비스를 만들어가는 과정을 중요하게 생각합니다.
           </p>
         </div>
       </div>
